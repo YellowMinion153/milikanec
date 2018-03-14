@@ -59,3 +59,54 @@ bot.on('message', msg => {
 });
 
 bot.login(process.env.BOT_TOKEN);
+
+updateInOneMinute = function(){
+    m = m + 1;
+    if(m >= 60){
+        h = h + 1;
+        m = 0;
+    }
+
+    if(h >= 24){
+        d = d + 1;
+        h = 0;
+        console.log('Updating hours....');
+    }
+
+    formateTime();
+    setTimeout(updateInOneMinute, 60000);
+}
+
+formateTime = function(){
+
+    var formattedM = '', formattedH = '', formattedD = '';
+
+    if(m < 10)
+        formattedM = '0' + m;
+    else
+        formattedM = m;
+
+    if(h < 10)
+        formattedH = '0' + h;
+    else
+        formattedH = h;
+
+    if(d < 10)
+        formattedD = '0' + d;
+    else
+        formattedD = d;
+    client.user.setPresence({ game: { name: 'Любит Надю             ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
+}
+
+logTime = function () {
+    console.log('M:' + m);
+    console.log('H:' + h);
+    console.log('D:' + d);
+}
+
+getRandomInt = function(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+setTimeout(updateInOneMinute, 60000);
