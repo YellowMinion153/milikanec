@@ -97,7 +97,7 @@ formateTime = function(){
         formattedD = '0' + d;
     else
         formattedD = d;
-    bot.user.setPresence({ game: { name: 'Вьетнам      ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
+    bot.user.setPresence({ game: { name: 'Вьетнам ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
 }
 
 logTime = function () {
