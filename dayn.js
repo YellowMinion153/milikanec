@@ -33,7 +33,9 @@ bot.on('message', msg => {
         msg.reply('Пошел нахер пидр');
             return;
         }
-        if(ignoreCase.equals(msg.content, 'g!heart')){
+        }
+    
+    if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
                 image: {
