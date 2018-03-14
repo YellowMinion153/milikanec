@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
 
+var d = 00, h = 00, m = 00;
+
 bot.on('ready', () => {
     console.log('Go bitch');
 bot.user.setPresence({ game: { name: 'Вьетнам', type: 1} });
