@@ -6,7 +6,7 @@ var d = 00, h = 00, m = 00;
 
 bot.on('ready', () => {
     console.log('Go bitch');
-bot.user.setPresence({ game: { name: 'Вьетнам', type: 1} });
+bot.user.setPresence({ game: { name: 'Вьетнам', type: 2} });
 });
 
 bot.on('message', msg => {
@@ -25,6 +25,16 @@ bot.on('message', msg => {
             embed:{
                 image:{
                 url: "https://cdn.discordapp.com/attachments/419427467795628037/423403907440574464/unknown.png",
+                }
+            }
+        })
+    }
+
+    if(ignoreCase.equals(msg.content, 'Напалм')){
+        msg.channel.send({
+            embed:{
+                image:{
+                url: "https://cdn.discordapp.com/attachments/423241965325254657/423605506117206027/1.jpg",
                 }
             }
         })
@@ -97,7 +107,7 @@ formateTime = function(){
         formattedD = '0' + d;
     else
         formattedD = d;
-    bot.user.setPresence({ game: { name: 'Вьетнам ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
+    bot.user.setPresence({ game: { name: 'Вьетнам ' + formattedD + ':' + formattedH + ':' + formattedM, type: 2 } });
 }
 
 logTime = function () {
