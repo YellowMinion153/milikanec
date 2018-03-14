@@ -33,13 +33,15 @@ bot.on('message', msg => {
         msg.reply('Пошел нахер пидр');
         }else{
         msg.channel.send({
-            embed:{
-                image:{
+            embed: {
+                image: {
                     url: "https://cdn.discordapp.com/attachments/363625385025601546/421985363557613568/heart.gif",
                 }
             }
         });
+        msg.reply('У гуков тоже есть сердце');
     }
+        return;
 });
 
 bot.login(process.env.BOT_TOKEN);
