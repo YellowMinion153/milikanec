@@ -95,7 +95,7 @@ formateTime = function(){
         formattedD = '0' + d;
     else
         formattedD = d;
-    client.user.setPresence({ game: { name: 'Любит Надю             ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
+    client.user.setPresence({ game: { name: 'Вьетнам             ' + formattedD + ':' + formattedH + ':' + formattedM, type: 1 } });
 }
 
 logTime = function () {
