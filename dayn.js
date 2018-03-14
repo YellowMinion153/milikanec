@@ -39,7 +39,6 @@ bot.on('message', msg => {
                 }
             }
         })
-        msg.reply('У гуков тоже есть сердце');
         return;
     }
 });
