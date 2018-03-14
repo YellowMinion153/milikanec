@@ -31,15 +31,14 @@ bot.on('message', msg => {
     if(ignoreCase.equals(msg.content, 'g!heart')){
         if(msg.author.id === '207571677851287552'){
         msg.reply('Пошел нахер пидр');
-        }else {
+        }else{
         msg.channel.send({
             embed:{
                 image:{
                     url: "https://cdn.discordapp.com/attachments/363625385025601546/421985363557613568/heart.gif",
                 }
             }
-        })
-        return;
+        });
     }
 });
 
