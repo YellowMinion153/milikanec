@@ -38,9 +38,8 @@ bot.on('message', msg => {
                     url: "https://cdn.discordapp.com/attachments/363625385025601546/421985363557613568/heart.gif",
                 }
             }
-        })
+        });
         msg.reply('У гуков тоже есть сердце');}
-    }
     return;
 });
 
