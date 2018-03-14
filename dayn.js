@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-var token = 'NDIzNDIzMDg3MDE5NTU2ODY1.DYqHmg.JNl3_OS_wAn5VUadcexqP4y2CSo';
 var ignoreCase = require('ignore-case');
 
 bot.on('ready', () => {
@@ -40,4 +39,4 @@ bot.on('message', msg => {
     }
 });
 
-bot.login('NDIzNDIzMDg3MDE5NTU2ODY1.DYqHmg.JNl3_OS_wAn5VUadcexqP4y2CSo');
+bot.login(process.env.BOT_TOKEN);
