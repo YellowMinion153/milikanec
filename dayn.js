@@ -14,7 +14,7 @@ bot.on('message', msg => {
 }
 
     if(ignoreCase.equals(msg.content, 'Гуки на деревьях')){
-       msg.channel.send('****спрыгнул с дерева****');
+       msg.channel.send('* спрыгнул с дерева *');
        return;
     }
 
