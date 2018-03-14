@@ -4,7 +4,7 @@ var ignoreCase = require('ignore-case');
 
 bot.on('ready', () => {
     console.log('Go bitch');
-bot.user.setPresence({ game: { name: 'Вьетнам'} });
+bot.user.setPresence({ game: { name: 'Вьетнам', type: 1} });
 });
 
 bot.on('message', msg => {
