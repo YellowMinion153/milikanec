@@ -31,7 +31,9 @@ bot.on('message', msg => {
     if(ignoreCase.equals(msg.content, 'g!heart')){
         if(msg.author.id === '207571677851287552'){
         msg.reply('Пошел нахер пидр');
-        }else{
+            return;
+        }
+        if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
                 image: {
