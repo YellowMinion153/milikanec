@@ -14,7 +14,7 @@ bot.on('message', msg => {
 }
 
     if(ignoreCase.equals(msg.content, 'Гуки на деревьях')){
-       msg.channel.send('* спрыгнул с дерева *');
+       msg.channel.send('`*спрыгнул с дерева*`');
        return;
     }
 
@@ -27,6 +27,16 @@ bot.on('message', msg => {
             }
         })
     }
+
+    if(ignoreCase.equals(msg.content, 'Солнечный гук')){
+        msg.channel.send({
+            embed:{
+                image:{
+                url: "https://cdn.discordapp.com/attachments/423241965325254657/423591361292533770/421956339351420928.png",
+                }
+            }
+        })
+    };
 
     if(ignoreCase.equals(msg.content, 'g!heart')){
         if(msg.author.id === '207571677851287552'){
