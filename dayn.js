@@ -41,6 +41,8 @@ bot.on('message', msg => {
         })
     }
         msg.reply('У гуков тоже есть сердце');
+    }
+    return;
 });
 
 bot.login(process.env.BOT_TOKEN);
