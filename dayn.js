@@ -41,13 +41,19 @@ bot.on('message', msg => {
 }
 
     if(ignoreCase.equals(msg.content, 'g!help')){
-        msg.channel.send('```Гуки на деревьях```');
-        msg.channel.send('```Хитрый гук```');
-        msg.channel.send('```Напалм```');
-        msg.channel.send('```Солнечный гук```');
-        msg.channel.send('```g!heart```');
-        msg.channel.send('```Пытать гука: Сломать палец; Устроить нехватку кислорода; Включить элджея```');
-        msg.channel.send('Бот будет обновляться в дальнейшем');
+        msg.channel.send('```Гуки на деревьях' +
+            'Хитрый гук' +
+            'Напалм' +
+            'Солнечный гук' +
+            'g!heart' +
+            'Пытать гука: Сломать палец; Устроить нехватку кислорода; Включить элджея' +
+            'Бот будет обновляться в дальнейшем```');
+        //msg.channel.send('```Хитрый гук```');
+        //msg.channel.send('```Напалм```');
+        //msg.channel.send('```Солнечный гук```');
+        //msg.channel.send('```g!heart```');
+        //msg.channel.send('```Пытать гука: Сломать палец; Устроить нехватку кислорода; Включить элджея```');
+        //msg.channel.send('Бот будет обновляться в дальнейшем');
     }
 
     if(ignoreCase.equals(msg.content, 'Гуки на деревьях')){
