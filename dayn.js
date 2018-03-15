@@ -13,25 +13,25 @@ var i = 0;
 bot.on('message', msg => {
     if(i === 1
 )
-if (ignoreCase.equals(msg.content, '1')) {
-    msg.reply("1!");
+if (ignoreCase.equals(msg.content, 'Сломать палец')) {
+    msg.channel.send("`*кричит от боли, но не говорит миликанцам ничего*`");
     i = 0;
     console.log("1");
 }
-if (ignoreCase.equals(msg.content, '2')) {
-    msg.reply("2!");
+if (ignoreCase.equals(msg.content, 'Устроить нехватку кислорода')) {
+    msg.reply("`*задыхаясь, падает и умирает*`");
     i = 0;
     console.log("2");
 
-    if (ignoreCase.equals(msg.content, '3')) {
-        msg.reply("3!");
+if (ignoreCase.equals(msg.content, 'Включить элджея')) {
+        msg.reply("`*с кровью из ушей, рассказывает миликанцам всё*`");
         i = 0;
         console.log("3");
     }
 }
-if (i !== 1 && ignoreCase.equals(msg.content, 'test')) {
+if (i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')) {
     {
-        msg.reply("1? 2? 3?");
+        msg.reply("Выберите пытку");
         i = 1;
     }
 }
