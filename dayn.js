@@ -19,12 +19,12 @@ if (ignoreCase.equals(msg.content, 'Сломать палец')) {
     console.log("1");
 }
 if (ignoreCase.equals(msg.content, 'Устроить нехватку кислорода')) {
-    msg.reply("`*задыхаясь, падает и умирает*`");
+    msg.channel.send("`*задыхаясь, падает и умирает*`");
     i = 0;
     console.log("2");
 }
 if (ignoreCase.equals(msg.content, 'Включить элджея')) {
-    msg.reply("`*с кровью из ушей, рассказывает миликанцам всё*`");
+    msg.channel.send("`*с кровью из ушей, рассказывает миликанцам всё*`");
         i = 0;
         console.log("3");
     }
