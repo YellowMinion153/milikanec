@@ -56,7 +56,20 @@ bot.on('message', msg => {
             return;
         }
         }
-    
+
+    if(ignoreCase.equals(msg.content, 'Пытать гука')){
+        msg.reply('Выберите пытку'){
+            if(ignoreCase.equals(msg.content, 'Сломать палец')){
+                msg.channel.send('`*кричит от боли, но ничего не рассказывает миликанцам*`')
+            }
+        }else{
+            if(ignoreCase.equals(msg.content, 'Устроить нехватку кислорода')){
+                msg.channel.send('`*задыхаясь падает и умирает*`')
+                return;
+            }
+        }
+    }
+
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
