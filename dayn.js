@@ -40,6 +40,16 @@ bot.on('message', msg => {
     return;
 }
 
+    if(ignoreCase.equals(msg.content, 'g!help')){
+        msg.channel.send('```Гуки на деревьях```');
+        msg.channel.send('```Хитрый гук```');
+        msg.channel.send('```Напалм```');
+        msg.channel.send('```Солнечный гук```');
+        msg.channel.send('```g!heart```');
+        msg.channel.send('```Пытать гука: Сломать палец; Устроить нехватку кислорода Включить элджея```');
+        msg.channel.send('Бот будет обновляться в дальнейшем');
+    }
+
     if(ignoreCase.equals(msg.content, 'Гуки на деревьях')){
        msg.channel.send('`*спрыгнул с дерева*`');
        return;
@@ -82,13 +92,6 @@ bot.on('message', msg => {
         }
         }
 
-    //if(ignoreCase.equals(msg.content, 'Пытать гука')){
-    //    msg.reply('Выберите пытку');
-    //    {if(ignoreCase.equals(msg.content, 'Сломать палец')){
-    //        msg.channel.send('`*кричит от боли, но ничего не говорит миликанцам*`');
-    //        }
-    //    };
-    //};
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
