@@ -58,7 +58,8 @@ bot.on('message', msg => {
         }
 
     if(ignoreCase.equals(msg.content, 'Пытать гука')){
-        msg.reply('Выберите пытку'){
+        msg.reply('Выберите пытку');
+        {
             if(ignoreCase.equals(msg.content, 'Сломать палец')){
                 msg.channel.send('`*кричит от боли, но ничего не рассказывает миликанцам*`')
             }
