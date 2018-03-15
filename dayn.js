@@ -22,9 +22,9 @@ if (ignoreCase.equals(msg.content, 'Устроить нехватку кисло
     msg.reply("`*задыхаясь, падает и умирает*`");
     i = 0;
     console.log("2");
-
+}
 if (ignoreCase.equals(msg.content, 'Включить элджея')) {
-        msg.reply("`*с кровью из ушей, рассказывает миликанцам всё*`");
+    msg.reply("`*с кровью из ушей, рассказывает миликанцам всё*`");
         i = 0;
         console.log("3");
     }
