@@ -59,12 +59,11 @@ bot.on('message', msg => {
 
     if(ignoreCase.equals(msg.content, 'Пытать гука')){
         msg.reply('Выберите пытку');
-
-        if(ignoreCase.equals(msg.content, 'Сломать палец')){
+        {if(ignoreCase.equals(msg.content, 'Сломать палец')){
             msg.channel.send('`*кричит от боли, но ничего не говорит миликанцам*`');
+            };
         };
     };
-
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
