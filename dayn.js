@@ -9,12 +9,32 @@ bot.on('ready', () => {
 bot.user.setPresence({ game: { name: 'Вьетнам', type: 2} });
 });
 
-bot.on('message', msg => {
-    if(ignoreCase.equals(msg.content, 'Пытать гука')){
-        msg.reply('Выберите пытку'); => {
-        if(ignoreCase.equals(msg.content, 'Сломать палец')){
-            msg.channel.send('`*кричит от боли, но ничего не говорит миликанцам*`');
-        }
+var i = 0;
+client.on('message', msg => {
+    if(i === 1
+)
+{
+}
+if (ignoreCase.equals(msg.content, 'Сломать палец')) {
+    msg.channel.send("`*кричит от боли, но ничего не говорит гукам*`");
+    i = 0;
+    console.log("1");
+}
+if (ignoreCase.equals(msg.content, '2')) {
+    msg.channel.send("2!");
+    i = 0;
+    console.log("2");
+}
+if (ignoreCase.equals(msg.content, '3')) {
+    msg.channel.send("3!");
+    i = 0;
+    console.log("3");
+}
+}
+if(i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')){
+    {
+        msg.reply("1? 2? 3?");
+        i = 1;
     }
 }
 });
