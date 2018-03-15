@@ -65,7 +65,6 @@ bot.on('message', msg => {
         }else{
             if(ignoreCase.equals(msg.content, 'Устроить нехватку кислорода')){
                 msg.channel.send('`*задыхаясь падает и умирает*`')
-                return;
             }
         }
     }
