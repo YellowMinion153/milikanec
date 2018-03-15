@@ -37,7 +37,7 @@ if(i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')){
         i = 1;
     }
 }
-});
+);
 
 bot.on('message', msg => {
     if(ignoreCase.equals(msg.content, 'Заткнись')){
