@@ -28,12 +28,9 @@ if (ignoreCase.equals(msg.content, 'Включить элджея')) {
         i = 0;
         console.log("3");
     }
-}
 if (i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')) {
-    {
         msg.reply("Выберите пытку");
         i = 1;
-    }
 }
 });
 
