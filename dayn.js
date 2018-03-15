@@ -13,29 +13,33 @@ var i = 0;
 bot.on('message', msg => {
     if(i === 1
 )
-if (ignoreCase.equals(msg.content, 'Сломать палец')) {
-    msg.channel.send("`*кричит от боли, но ничего не говорит гукам*`");
+{
+}
+if (ignoreCase.equals(msg.content, '1')) {
+    msg.reply("1!");
     i = 0;
     console.log("1");
 }
 if (ignoreCase.equals(msg.content, '2')) {
-    msg.channel.send("2!");
+    msg.reply("2!");
     i = 0;
     console.log("2");
 }
 if (ignoreCase.equals(msg.content, '3')) {
-    msg.channel.send("3!");
+    msg.reply("3!");
     i = 0;
     console.log("3");
 }
 }
-if(i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')){
+if(i !== 1 && ignoreCase.equals(msg.content, 'test')){
     {
         msg.reply("1? 2? 3?");
         i = 1;
     }
+
+
 }
-);
+});
 
 bot.on('message', msg => {
     if(ignoreCase.equals(msg.content, 'Заткнись')){
