@@ -10,11 +10,9 @@ bot.user.setPresence({ game: { name: 'Вьетнам', type: 2} });
 });
 
 var i = 0;
-client.on('message', msg => {
+bot.on('message', msg => {
     if(i === 1
 )
-{
-}
 if (ignoreCase.equals(msg.content, 'Сломать палец')) {
     msg.channel.send("`*кричит от боли, но ничего не говорит гукам*`");
     i = 0;
