@@ -41,7 +41,7 @@ bot.on('message', msg => {
 }
 
     if(ignoreCase.equals(msg.content, 'g!help')){
-        msg.channel.send('```Гуки на деревьях```');
+        msg.channel.send('```Гуки на деревьях                           Хитрый гук```');
         msg.channel.send('```Хитрый гук```');
         msg.channel.send('```Напалм```');
         msg.channel.send('```Солнечный гук```');
