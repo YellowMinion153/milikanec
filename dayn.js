@@ -61,7 +61,7 @@ bot.on('message', msg => {
         msg.reply('Выберите пытку');
 
         if(ignoreCase.equals(msg.content, 'Сломать палец')){
-            msg.channel.send('`*ричит от боли, но ничего не говорит миликанцам*`');
+            msg.channel.send('`*кричит от боли, но ничего не говорит миликанцам*`');
         };
     };
 
