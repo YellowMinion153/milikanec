@@ -95,7 +95,7 @@ bot.on('message', msg => {
         msg.channel.send({
             embed:{
                 image:{
-                    url: "https://cdn.discordapp.com/attachments/419427467795628037/424236433298030592/unknown.png",
+                    url: "https://cdn.discordapp.com/attachments/423241965325254657/424327723884871681/73eec4f2b47c340c.png",
                 }
             }
         })
