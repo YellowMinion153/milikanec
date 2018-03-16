@@ -65,6 +65,16 @@ bot.on('message', msg => {
         })
     }
 
+    if(ignoreCase.equals(msg.content, 'Даун гук')){
+        msg.channel.send({
+        embed:{
+            image:{
+                url: "https://cdn.discordapp.com/attachments/419427467795628037/424236433298030592/unknown.png",
+                }
+            }
+        })
+    }
+
     if(ignoreCase.equals(msg.content, 'Напалм')){
         msg.channel.send({
             embed:{
