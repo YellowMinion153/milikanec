@@ -59,7 +59,7 @@ bot.on('message', msg => {
         msg.channel.send({
             embed:{
                 image:{
-                url: "https://cdn.discordapp.com/attachments/419427467795628037/423403907440574464/unknown.png",
+                    url: "https://cdn.discordapp.com/attachments/419427467795628037/423403907440574464/unknown.png",
                 }
             }
         })
@@ -67,9 +67,19 @@ bot.on('message', msg => {
 
     if(ignoreCase.equals(msg.content, 'Даун гук')){
         msg.channel.send({
-        embed:{
-            image:{
-                url: "https://cdn.discordapp.com/attachments/419427467795628037/424236433298030592/unknown.png",
+            embed:{
+                image:{
+                    url: "https://cdn.discordapp.com/attachments/419427467795628037/424236433298030592/unknown.png",
+                }
+            }
+        })
+    }
+
+    if(ignoreCase.equals(msg.content, 'Гимн гуков')){
+        msg.channel.send({
+            embed:{
+                image:{
+                    url: "https://www.youtube.com/watch?v=4DxeiPYwHAg",
                 }
             }
         })
