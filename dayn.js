@@ -76,13 +76,7 @@ bot.on('message', msg => {
     }
 
     if(ignoreCase.equals(msg.content, 'Гимн гуков')){
-        msg.channel.send({
-            embed:{
-                image:{
-                    url: "https://www.youtube.com/watch?v=4DxeiPYwHAg",
-                }
-            }
-        })
+        msg.channel.send("https://www.youtube.com/watch?v=4DxeiPYwHAg");
     }
 
     if(ignoreCase.equals(msg.content, 'Напалм')){
