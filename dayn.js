@@ -60,7 +60,7 @@ if (i !== 1 && ignoreCase.equals(msg.content, 'Пытать гука')) {
 
 bot.on('message', msg => {
     if(ignoreCase.equals(msg.content, 'Заткнись')){
-    msg.reply('заткнись');
+    msg.channel.send('заткнись');
 }
 
     if(ignoreCase.equals(msg.content, 'g!help')){
