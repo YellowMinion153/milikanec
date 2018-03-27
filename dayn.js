@@ -195,3 +195,10 @@ getRandomInt = function(min, max)
 {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+if(timer == 1)
+    setTimeout(updateInOneMinute, 60000);
+else{
+    setTimeout(dynamicStatus, 30000);
+    console.log('Timer disabled!\nEnabled dynamicStatus()');
+}
