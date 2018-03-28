@@ -2,7 +2,7 @@
   "name": "yellowdayn",
   "version": "1.0.0",
   "description": "",
-  "main": "dayn.js",
+  "main": "milikanec.js",
   "dependencies": {
     "discord.js": "^11.3.2",
     "ignore-case": "^0.1.0"
