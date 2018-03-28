@@ -1,1 +1,0 @@
-worker: node milikanec.js 
