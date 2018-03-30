@@ -1,1 +1,1 @@
-worker: node milikanec.js 
+worker: node milikanec.js
