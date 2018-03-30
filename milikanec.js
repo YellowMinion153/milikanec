@@ -16,11 +16,6 @@ bot.on('message', msg => {
 }
 
     if(ignorCase.equals(msg.content, '')){
-    msg.channel.send('')}
-    return;
-}
-
-    if(ignoreCase.equals(msg.content, '')){
     msg.channel.send('')
     return;
 }
@@ -28,5 +23,10 @@ bot.on('message', msg => {
     msg.channel.send('')
     return;
 }
+    if(ignoreCase.equals(msg.content, '')){
+    msg.channel.send('')
+    return;
+	}
+});
 
 bot.login(process.env.BOT_TOKEN);
