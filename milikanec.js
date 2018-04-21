@@ -15,7 +15,7 @@ bot.on('message', msg => {
     return;
 }
 
-    if(ignorCase.equals(msg.content, '')){
+    if(ignoreCase.equals(msg.content, '')){
     msg.channel.send('')
     return;
 }
