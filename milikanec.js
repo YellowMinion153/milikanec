@@ -10,8 +10,8 @@ bot.user.setPresence({ game: { name: 'Гуков на деревьх', type: 2} 
 });
 
 bot.on('message', msg => {
-    if(ignoreCase.equals(msg.content, '')){
-    msg.reply('');
+    if(ignoreCase.equals(msg.content, '``*собирает отряды гуков*``')){
+    msg.reply('``*высаживает войска на берега вьетнама*``');
     return;
 }
 
